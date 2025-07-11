@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Projects | Amberylin Tan</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    .projects-list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 25px;
+      padding: 20px 0;
+    }
+    
+    .project-card {
+      display: flex;
+      align-items: center;
+      max-width: 800px;
+      width: 100%;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      background-color: white;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      text-decoration: none;
+      color: inherit;
+    }
+    
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+    
+    .project-logo {
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
+      margin-right: 25px;
+      border-radius: 8px;
+    }
+    
+    .project-content {
+      flex: 1;
+    }
+    
+    .project-title {
+      color: var(--primary-color);
+      font-size: 1.3rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    
+    .project-title i {
+      margin-right: 0.5rem;
+    }
+    
+    .project-description {
+      margin: 10px 0;
+      color: #555;
+      line-height: 1.5;
+    }
+    
+    .project-technologies {
+      margin: 10px 0;
+      font-size: 0.95rem;
+    }
+    
+    .project-tags {
+      margin-top: 15px;
+    }
+    
+    .project-tags span {
+      background-color: #f0f0f0;
+      padding: 0.4rem 0.9rem;
+      border-radius: 30px;
+      font-size: 0.8rem;
+      margin-right: 0.7rem;
+      display: inline-block;
+    }
+    
+    .internship-tags span {
+      background-color: var(--primary-color);
+      color: white;
+    }
+    
+    /* Ensure no nested links */
+    .project-card a {
+      pointer-events: none;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Amberylin Tan</h1>
+    <p>Digital Creator & Developer</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+      <li><a href="projects.html" class="active"><i class="fas fa-code"></i> Projects</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h2 class="page-header">My Projects</h2>
+
+    <div class="projects-list">
+      <a href="wearify.html" class="project-card">
+        <img src="img/wearify.png" alt="Wearify Logo" class="project-logo">
+        <div class="project-content">
+          <div class="project-title"><i class="fas fa-mobile-alt"></i>Wearify</div>
+          <div class="project-description">Mobile app for Chinese culture fashion and studio booking.</div>
+          <div class="project-technologies"><strong>Technologies:</strong> Adobe XD</div>
+          <div class="project-tags">
+            <span>UI/UX</span>
+            <span>Mobile</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="ams.html" class="project-card">
+        <img src="img/ams.png" alt="AMS Logo" class="project-logo">
+        <div class="project-content">
+          <div class="project-title"><i class="fas fa-laptop-code"></i> AMS</div>
+          <div class="project-description">Web app with database integration for permanent data storage.</div>
+          <div class="project-technologies"><strong>Technologies:</strong> React.js, Node.js, MySQL</div>
+          <div class="project-tags">
+            <span>Full-stack</span>
+            <span>Database</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="octopus8.html" class="project-card">
+        <img src="img/o8.png" alt="Octopus8 Logo" class="project-logo">
+        <div class="project-content">
+          <div class="project-title"><i class="fas fa-briefcase" style="color: var(--secondary-color);"></i> Octopus8 - UAT Lead Internship</div>
+          <div class="project-description">Conducted User Acceptance Testing for company projects, guided clients through testing processes, and generated test outcome reports.</div>
+          <div class="project-technologies"><strong>Duration:</strong> April 2023 - October 2023</div>
+          <div class="project-tags internship-tags">
+            <span>UAT Testing</span>
+            <span>Client Management</span>
+            <span>Quality Assurance</span>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Amberylin Tan. All rights reserved.</p>
+  </footer>
+</body>
+
+</html>
